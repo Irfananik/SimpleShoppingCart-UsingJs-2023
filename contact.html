@@ -27,41 +27,66 @@
           <ul class="md:flex space-x-4">
             <li><a href="index.html" class="text-white">Home</a></li>
             <li><a href="offer.html" class="text-white">Offer</a></li>
-            <li><a href="service.html" class="text-white">Services</a></li>
-            <li><a href="contact.html" class="text-white">Contact</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
           </ul>
         </nav>
       </section>
       <!-- total amout section with total prices -->
       <section>
         <h1 class="text-center text-4xl my-6 text-white font-bold">
-            Here your products details and total amount!
-          </h1>
-        <div class="flex justify-items-center justify-center">
-              <div
-                class=" my-12 w-3/4"
+          Here your contact information!
+        </h1>
+        <div class="max-w-md mx-auto mt-10 bg-gray-800 rounded shadow-md p-4">
+          <h2 class="text-2xl my-6 text-white font-bold">Contact Form</h2>
+          <form>
+            <div class="mb-4">
+              <label
+                class="block text-white text-md font-bold mb-2"
+                for="name"
+                >Name:</label
               >
-                <!-- cart 1 -->
-                <div
-                  class="p-4 bg-gray-800 w-4/4 rounded-md shadow-2xl smooth-transition"
-                >
-                  <div class="flex justify-items-center justify-center">
-                    <img
-                    class="rounded-lg shadow-2xl"
-                    src="images/titlePhoto.jpg"
-                    alt="phone"
-                  />
-                  </div>
-                  <h1 class="text-2xl text-white text-center mt-4">Thank you for choosing our shop!</h1>
-                  <p class="text-lg text-gray-300 text-center">Please click the order confirm button below to purchase.</p>
-                  <div class="flex justify-items-center justify-center">
-                    <button id="order-confirm-button"
-                      class="bg-gray-400 w-18 rounded-lg shadow-xl p-2 ms-8 mt-4 hover:bg-gray-500 "
-                    >
-                      Order Confirm!
-                    </button>
-                  </div>
-                </div>
+              <input
+                class="border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500"
+                id="name"
+                type="text"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-white text-md font-bold mb-2"
+                for="email"
+                >Email:</label
+              >
+              <input
+                class="border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500"
+                id="email"
+                type="email"
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="mb-6">
+              <label
+                class="block text-white text-md font-bold mb-2"
+                for="comment"
+                >Comment:</label
+              >
+              <textarea
+                class="border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-blue-500"
+                id="comment"
+                rows="4"
+                placeholder="Enter your comment"
+              ></textarea>
+            </div>
+            <div class="flex justify-center">
+              <button
+                class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="submit"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </section>
       <section>
@@ -109,6 +134,5 @@
       </footer>
     </main>
     <script src="js/utilities.js"></script>
-    <script src="js/confirmOrder.js"></script>
   </body>
 </html>
