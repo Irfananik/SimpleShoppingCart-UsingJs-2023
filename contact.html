@@ -31,18 +31,15 @@
           </ul>
         </nav>
       </section>
-      <!-- total amout section with total prices -->
-      <section>
-        <h1 class="text-center text-4xl my-6 text-white font-bold">
-          Here your contact information!
+      <!-- contact form -->
+      <section class="mt-20">
+        <h1 class="text-center text-4xl text-white font-bold">
+          Here is your contact information!
         </h1>
-        <div class="max-w-md mx-auto mt-10 bg-gray-800 rounded shadow-md p-4">
+        <div class="max-w-md mx-auto mt-10 bg-gray-800 rounded shadow-md p-4 smooth-transition">
           <h2 class="text-2xl my-6 text-white font-bold">Contact Form</h2>
-          <form>
             <div class="mb-4">
-              <label
-                class="block text-white text-md font-bold mb-2"
-                for="name"
+              <label class="block text-white text-md font-bold mb-2" for="name"
                 >Name:</label
               >
               <input
@@ -53,9 +50,7 @@
               />
             </div>
             <div class="mb-4">
-              <label
-                class="block text-white text-md font-bold mb-2"
-                for="email"
+              <label class="block text-white text-md font-bold mb-2" for="email"
                 >Email:</label
               >
               <input
@@ -80,13 +75,35 @@
             </div>
             <div class="flex justify-center">
               <button
+                id="contact-btn"
                 class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
               >
-                Submit
+              Submit
               </button>
             </div>
-          </form>
+        </div>
+      </section>
+      <!-- contact data show box -->
+      <section class="mt-24">
+        <h1 class="text-center text-4xl text-white font-bold">
+          Here is all comment's with name and email!
+        </h1>
+        <div class="flex justify-items-center justify-center mt-8">
+          <div
+            class="p-4 bg-gray-800 w-4/4 rounded-md shadow-2xl smooth-transition"
+          >
+            <div class="flex justify-items-center justify-center">
+              <img
+                class="rounded-lg shadow-2xl"
+                src="images/titlePhoto.jpg"
+                alt="phone"
+              />
+            </div>
+            <h1 class="text-lg text-gray-300 text-center">Name: <span id="contact-name"></span></h1>
+            <h1 class="text-lg text-gray-300 text-center">Email: <span id="contact-email"></span></h1>
+            <p class="text-lg text-gray-300 text-center">Comment: <span id="contact-comment"></span></p>
+          </div>
         </div>
       </section>
       <section>
@@ -134,5 +151,6 @@
       </footer>
     </main>
     <script src="js/utilities.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
