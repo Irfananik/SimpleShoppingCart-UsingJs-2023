@@ -12,6 +12,8 @@ function showData(){
     getOutputFieldValue1ById.innerText = getNameFieldValueById.value
     getOutputFieldValueBy2Id.innerText = getEmailFieldValueById.value
     getOutputFieldValueBy3Id.innerText = getCommentFieldValueById.value
+
+    alert('Your comment completed and has been shown on the down section!')
 }
 
 contactButton.addEventListener('click', showData)
